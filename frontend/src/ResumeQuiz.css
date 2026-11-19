@@ -1,0 +1,788 @@
+/* =========================================
+   RESUME QUIZ PAGE
+========================================= */
+
+.resume-quiz-page {
+    min-height: 100vh;
+    background: #f8fafc;
+    padding: 40px 24px 60px;
+}
+
+.resume-quiz-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.resume-quiz-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.resume-quiz-icon {
+    width: 58px;
+    height: 58px;
+    margin: 0 auto 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eef4ff;
+    border-radius: 16px;
+
+    font-size: 28px;
+}
+
+.resume-quiz-header h1 {
+    margin: 0;
+
+    font-size: 34px;
+    font-weight: 700;
+
+    color: #111827;
+}
+
+.resume-quiz-header p {
+    margin: 10px 0 0;
+
+    font-size: 15px;
+
+    color: #6b7280;
+}
+
+
+/* =========================================
+   ERROR
+========================================= */
+
+.resume-quiz-error {
+    margin-bottom: 20px;
+
+    padding: 14px 16px;
+
+    background: #fef2f2;
+
+    border: 1px solid #fecaca;
+
+    border-radius: 10px;
+
+    color: #b91c1c;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   COMMON CARD
+========================================= */
+
+.resume-quiz-card {
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 18px;
+
+    padding: 32px;
+}
+
+.resume-quiz-card h2 {
+    margin: 0 0 25px;
+
+    font-size: 22px;
+
+    color: #111827;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.resume-quiz-form-group {
+    margin-bottom: 22px;
+}
+
+.resume-quiz-form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    color: #374151;
+}
+
+.resume-quiz-form-group select {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 13px 14px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    color: #111827;
+
+    font-size: 14px;
+
+    outline: none;
+}
+
+.resume-quiz-form-group select:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(37, 99, 235, 0.12);
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.resume-quiz-primary-button,
+.resume-quiz-secondary-button {
+    border-radius: 8px;
+
+    padding: 12px 18px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.resume-quiz-primary-button {
+    border: none;
+
+    background: #2563eb;
+
+    color: #ffffff;
+}
+
+.resume-quiz-primary-button:hover {
+    background: #1d4ed8;
+}
+
+.resume-quiz-primary-button:disabled {
+    opacity: 0.6;
+
+    cursor: not-allowed;
+}
+
+.resume-quiz-secondary-button {
+    background: #ffffff;
+
+    color: #374151;
+
+    border: 1px solid #d1d5db;
+}
+
+.resume-quiz-secondary-button:hover {
+    background: #f9fafb;
+}
+
+
+/* =========================================
+   PROGRESS
+========================================= */
+
+.resume-quiz-progress {
+    margin-bottom: 18px;
+}
+
+.resume-quiz-progress-text {
+    margin-bottom: 8px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    color: #4b5563;
+}
+
+.resume-quiz-progress-bar {
+    width: 100%;
+
+    height: 7px;
+
+    background: #e5e7eb;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.resume-quiz-progress-fill {
+    height: 100%;
+
+    background: #2563eb;
+
+    border-radius: 10px;
+
+    transition: width 0.3s ease;
+}
+
+
+/* =========================================
+   QUESTION
+========================================= */
+
+.resume-quiz-question {
+    margin-bottom: 22px !important;
+
+    font-size: 22px !important;
+
+    line-height: 1.5;
+
+    color: #111827;
+}
+
+
+/* =========================================
+   ANSWER TEXTAREA
+========================================= */
+
+.resume-quiz-answer {
+    width: 100%;
+
+    min-height: 190px;
+
+    box-sizing: border-box;
+
+    padding: 15px;
+
+    background: #ffffff !important;
+
+    color: #111827 !important;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 10px;
+
+    resize: vertical;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    outline: none;
+
+    -webkit-appearance: none;
+
+    appearance: none;
+}
+
+.resume-quiz-answer::placeholder {
+    color: #9ca3af;
+}
+
+.resume-quiz-answer:focus {
+    background: #ffffff !important;
+
+    color: #111827 !important;
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(37, 99, 235, 0.1);
+}
+
+
+/* Extra protection against browser dark mode */
+
+textarea.resume-quiz-answer {
+    background-color: #ffffff !important;
+
+    color: #111827 !important;
+
+    -webkit-text-fill-color: #111827 !important;
+}
+
+
+/* =========================================
+   QUESTION NAVIGATION
+========================================= */
+
+.resume-quiz-navigation {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 22px;
+}
+
+
+/* =========================================
+   RESULT HERO
+========================================= */
+
+.resume-quiz-results-page {
+    width: 100%;
+}
+
+.resume-quiz-result-hero {
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 20px;
+
+    padding: 42px 30px;
+
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+.resume-quiz-result-eyebrow {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.1em;
+
+    color: #2563eb;
+}
+
+.resume-quiz-result-hero h2 {
+    margin: 0;
+
+    font-size: 25px;
+
+    font-weight: 700;
+
+    color: #111827;
+}
+
+
+/* =========================================
+   BIG SCORE
+========================================= */
+
+.resume-quiz-big-score {
+    margin-top: 22px;
+
+    font-size: 64px;
+
+    line-height: 1;
+
+    font-weight: 800;
+}
+
+.resume-quiz-big-score span {
+    font-size: 24px;
+
+    font-weight: 600;
+
+    color: #6b7280;
+}
+
+.resume-quiz-big-score.excellent {
+    color: #059669;
+}
+
+.resume-quiz-big-score.good {
+    color: #2563eb;
+}
+
+.resume-quiz-big-score.average {
+    color: #d97706;
+}
+
+.resume-quiz-big-score.low {
+    color: #dc2626;
+}
+
+
+/* =========================================
+   PERFORMANCE
+========================================= */
+
+.resume-quiz-performance {
+    margin: 14px 0 8px;
+
+    font-size: 18px;
+}
+
+.resume-quiz-performance.excellent {
+    color: #059669;
+}
+
+.resume-quiz-performance.good {
+    color: #2563eb;
+}
+
+.resume-quiz-performance.average {
+    color: #d97706;
+}
+
+.resume-quiz-performance.low {
+    color: #dc2626;
+}
+
+.resume-quiz-result-hero p {
+    margin: 0;
+
+    font-size: 14px;
+
+    color: #6b7280;
+}
+
+
+/* =========================================
+   RESULT SUMMARY
+========================================= */
+
+.resume-quiz-summary-card {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 16px;
+
+    margin-bottom: 30px;
+}
+
+.resume-quiz-summary-card > div {
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 14px;
+
+    padding: 20px;
+
+    text-align: center;
+}
+
+.resume-quiz-summary-card span {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+
+    color: #6b7280;
+}
+
+.resume-quiz-summary-card strong {
+    font-size: 21px;
+
+    color: #111827;
+}
+
+
+/* =========================================
+   FEEDBACK SECTION
+========================================= */
+
+.resume-quiz-feedback-section {
+    margin-top: 10px;
+}
+
+.resume-quiz-feedback-heading {
+    margin-bottom: 20px;
+}
+
+.resume-quiz-feedback-heading > span {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+
+    color: #2563eb;
+}
+
+.resume-quiz-feedback-heading h2 {
+    margin: 0;
+
+    font-size: 24px;
+
+    color: #111827;
+}
+
+.resume-quiz-feedback-heading p {
+    margin: 7px 0 0;
+
+    font-size: 14px;
+
+    color: #6b7280;
+}
+
+
+/* =========================================
+   INDIVIDUAL RESULT
+========================================= */
+
+.resume-quiz-result-item {
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 16px;
+
+    padding: 26px;
+
+    margin-bottom: 18px;
+}
+
+.resume-quiz-result-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    gap: 20px;
+
+    padding-bottom: 20px;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.resume-quiz-question-label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+
+    color: #2563eb;
+}
+
+.resume-quiz-result-header h3 {
+    margin: 0;
+
+    max-width: 700px;
+
+    font-size: 17px;
+
+    line-height: 1.5;
+
+    color: #111827;
+}
+
+
+/* =========================================
+   QUESTION SCORE
+========================================= */
+
+.resume-quiz-question-score {
+    flex-shrink: 0;
+
+    font-size: 20px;
+
+    font-weight: 700;
+}
+
+.resume-quiz-question-score span {
+    font-size: 12px;
+
+    color: #6b7280;
+}
+
+.resume-quiz-question-score.excellent {
+    color: #059669;
+}
+
+.resume-quiz-question-score.good {
+    color: #2563eb;
+}
+
+.resume-quiz-question-score.average {
+    color: #d97706;
+}
+
+.resume-quiz-question-score.low {
+    color: #dc2626;
+}
+
+
+/* =========================================
+   ANSWER / FEEDBACK BOXES
+========================================= */
+
+.resume-quiz-answer-section,
+.resume-quiz-feedback-box,
+.resume-quiz-improvement-box {
+    margin-top: 20px;
+
+    padding: 18px;
+
+    border-radius: 10px;
+}
+
+.resume-quiz-answer-section {
+    background: #f8fafc;
+}
+
+.resume-quiz-feedback-box {
+    background: #eff6ff;
+}
+
+.resume-quiz-improvement-box {
+    background: #fffbeb;
+}
+
+.resume-quiz-answer-section span,
+.resume-quiz-feedback-box span,
+.resume-quiz-improvement-box span {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+}
+
+.resume-quiz-answer-section span {
+    color: #6b7280;
+}
+
+.resume-quiz-feedback-box span {
+    color: #2563eb;
+}
+
+.resume-quiz-improvement-box span {
+    color: #b45309;
+}
+
+.resume-quiz-answer-section p,
+.resume-quiz-feedback-box p,
+.resume-quiz-improvement-box p {
+    margin: 0;
+
+    font-size: 14px;
+
+    line-height: 1.65;
+
+    color: #374151;
+
+    white-space: pre-wrap;
+}
+
+
+/* =========================================
+   RESULT BUTTONS
+========================================= */
+
+.resume-quiz-result-actions {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-top: 28px;
+}
+
+.resume-quiz-result-actions
+.resume-quiz-primary-button,
+.resume-quiz-result-actions
+.resume-quiz-secondary-button {
+    width: auto;
+}
+
+
+/* =========================================
+   BACK TO DASHBOARD
+========================================= */
+
+.resume-quiz-bottom {
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 24px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .resume-quiz-page {
+        padding: 25px 15px 45px;
+    }
+
+    .resume-quiz-card {
+        padding: 22px;
+    }
+
+    .resume-quiz-header h1 {
+        font-size: 28px;
+    }
+
+    .resume-quiz-summary-card {
+        grid-template-columns: 1fr;
+    }
+
+    .resume-quiz-result-header {
+        flex-direction: column;
+    }
+
+    .resume-quiz-result-actions {
+        flex-direction: column;
+    }
+
+    .resume-quiz-result-actions button {
+        width: 100% !important;
+    }
+
+    .resume-quiz-navigation {
+        flex-direction: column;
+    }
+
+    .resume-quiz-navigation button {
+        width: 100%;
+    }
+
+}

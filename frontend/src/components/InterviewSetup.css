@@ -1,0 +1,580 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+.interview-setup {
+  min-height: calc(100vh - 70px);
+
+  background:
+    radial-gradient(
+      circle at top left,
+      #eef4ff 0%,
+      #f7f9fc 35%,
+      #f4f6fa 100%
+    );
+
+  padding: 55px 24px 70px;
+
+  box-sizing: border-box;
+
+  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+
+  color: #111827;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.interview-setup-container {
+  width: 100%;
+  max-width: 850px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.interview-setup-header {
+  text-align: center;
+
+  margin-bottom: 35px;
+}
+
+.interview-setup-header-icon {
+  width: 64px;
+  height: 64px;
+
+  margin: 0 auto 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 18px;
+
+  background: #2563eb;
+
+  color: #ffffff;
+
+  font-size: 28px;
+
+  box-shadow:
+    0 12px 30px rgba(37, 99, 235, 0.22);
+}
+
+.interview-setup-header h1 {
+  margin: 0;
+
+  color: #111827 !important;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 34px;
+
+  font-weight: 800;
+
+  letter-spacing: -0.7px;
+
+  line-height: 1.2;
+}
+
+.interview-setup-header p {
+  max-width: 620px;
+
+  margin: 12px auto 0;
+
+  color: #64748b !important;
+
+  font-size: 15px;
+
+  font-weight: 400;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   FORM CARD
+========================================================= */
+
+.interview-setup-card {
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 22px;
+
+  padding: 38px;
+
+  box-shadow:
+    0 15px 45px rgba(15, 23, 42, 0.07);
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CARD HEADER
+========================================================= */
+
+.interview-setup-card-header {
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  padding-bottom: 25px;
+
+  margin-bottom: 28px;
+
+  border-bottom: 1px solid #edf0f4;
+}
+
+.card-header-icon {
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: #eff6ff;
+
+  color: #2563eb;
+
+  font-size: 20px;
+}
+
+.interview-setup-card-header h2 {
+  margin: 0;
+
+  color: #111827 !important;
+
+  font-size: 19px;
+
+  font-weight: 700;
+}
+
+.interview-setup-card-header p {
+  margin: 3px 0 0;
+
+  color: #64748b !important;
+
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   FORM GROUP
+========================================================= */
+
+.interview-form-group {
+  margin-bottom: 24px;
+}
+
+.interview-form-group:last-of-type {
+  margin-bottom: 0;
+}
+
+.interview-form-group label {
+  display: block;
+
+  margin-bottom: 9px;
+
+  color: #1e293b !important;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.1px;
+}
+
+
+/* =========================================================
+   INPUTS
+========================================================= */
+
+.interview-form-group input,
+.interview-form-group select {
+  width: 100%;
+
+  min-height: 54px;
+
+  padding: 0 16px;
+
+  box-sizing: border-box;
+
+  border: 1.5px solid #d7dee8;
+
+  border-radius: 11px;
+
+  background: #ffffff !important;
+
+  color: #111827 !important;
+
+  font-family: "Poppins", "Segoe UI", sans-serif;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+
+/* Placeholder */
+
+.interview-form-group input::placeholder {
+  color: #94a3b8 !important;
+
+  opacity: 1;
+}
+
+
+/* Focus */
+
+.interview-form-group input:focus,
+.interview-form-group select:focus {
+  border-color: #2563eb;
+
+  background: #ffffff !important;
+
+  box-shadow:
+    0 0 0 4px rgba(37, 99, 235, 0.10);
+}
+
+
+/* Hover */
+
+.interview-form-group input:hover,
+.interview-form-group select:hover {
+  border-color: #94a3b8;
+}
+
+
+/* =========================================================
+   SELECT
+========================================================= */
+
+.interview-form-group select {
+  cursor: pointer;
+
+  appearance: auto;
+}
+
+
+/*
+   Very important:
+   Make dropdown options visible.
+*/
+
+.interview-form-group select option {
+  background: #ffffff !important;
+
+  color: #111827 !important;
+
+  font-family: "Poppins", "Segoe UI", sans-serif;
+
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   FORM HINT
+========================================================= */
+
+.form-hint {
+  display: block;
+
+  margin-top: 7px;
+
+  color: #94a3b8 !important;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.interview-error {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: 20px;
+
+  padding: 13px 15px;
+
+  border: 1px solid #fecaca;
+
+  border-radius: 10px;
+
+  background: #fef2f2;
+
+  color: #b91c1c !important;
+
+  font-size: 13px;
+
+  font-weight: 500;
+}
+
+.interview-error-icon {
+  width: 22px;
+  height: 22px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #fee2e2;
+
+  color: #dc2626;
+
+  font-size: 12px;
+
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   START BUTTON
+========================================================= */
+
+.start-interview-button {
+  width: 100%;
+
+  min-height: 54px;
+
+  margin-top: 30px;
+
+  border: none;
+
+  border-radius: 11px;
+
+  background: #2563eb;
+
+  color: #ffffff !important;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.1px;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 8px 20px rgba(37, 99, 235, 0.20);
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.start-interview-button:hover:not(:disabled) {
+  background: #1d4ed8;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 12px 25px rgba(37, 99, 235, 0.25);
+}
+
+.start-interview-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.start-interview-button:disabled {
+  background: #94a3b8;
+
+  box-shadow: none;
+
+  cursor: not-allowed;
+
+  opacity: 0.7;
+}
+
+
+/* =========================================================
+   BACK BUTTON
+========================================================= */
+
+.back-dashboard-button {
+  width: 100%;
+
+  min-height: 50px;
+
+  margin-top: 12px;
+
+  border: 1px solid #d7dee8;
+
+  border-radius: 11px;
+
+  background: #ffffff;
+
+  color: #475569 !important;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.back-dashboard-button:hover {
+  background: #f8fafc;
+
+  border-color: #94a3b8;
+
+  color: #111827 !important;
+}
+
+
+/* =========================================================
+   INFORMATION CARDS
+========================================================= */
+
+.interview-info-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 14px;
+
+  margin-top: 22px;
+}
+
+.interview-info-card {
+  padding: 18px;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 14px;
+
+  text-align: center;
+}
+
+.interview-info-card-icon {
+  font-size: 20px;
+
+  margin-bottom: 7px;
+}
+
+.interview-info-card strong {
+  display: block;
+
+  color: #1e293b;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+.interview-info-card span {
+  display: block;
+
+  margin-top: 3px;
+
+  color: #64748b;
+
+  font-size: 11px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .interview-setup {
+    padding: 35px 16px 50px;
+  }
+
+  .interview-setup-header h1 {
+    font-size: 27px;
+  }
+
+  .interview-setup-header p {
+    font-size: 13px;
+  }
+
+  .interview-setup-card {
+    padding: 24px 20px;
+
+    border-radius: 17px;
+  }
+
+  .interview-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 450px) {
+
+  .interview-setup-header-icon {
+    width: 55px;
+    height: 55px;
+
+    font-size: 23px;
+  }
+
+  .interview-setup-header h1 {
+    font-size: 24px;
+  }
+
+  .interview-setup-card {
+    padding: 20px 16px;
+  }
+
+  .interview-form-group input,
+  .interview-form-group select {
+    min-height: 51px;
+
+    font-size: 13px;
+  }
+}
